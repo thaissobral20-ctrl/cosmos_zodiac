@@ -6,7 +6,8 @@ An interactive, multi-page front-end web application that simulates the Solar Sy
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Responsive](https://img.shields.io/badge/Responsive-Mobile%20Friendly-brightgreen)
-git clone [https://thaissobral20-ctrl.github.io/cosmos_zodiac/](https://thaissobral20-ctrl.github.io/cosmos_zodiac/)
+
+Site Live [https://thaissobral20-ctrl.github.io/cosmos_zodiac/](https://thaissobral20-ctrl.github.io/cosmos_zodiac/)
 ---
 
 ## ✨ Features
