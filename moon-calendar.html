@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Calendar & Zodiac</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <header>
+        <h1>🌙 LUNAR CALENDAR & ZODIAC</h1>
+        <p>Track real-time moon phases and their passage through the astrological signs.</p>
+        <nav>
+            <a href="index.html" class="nav-btn link-btn">← Back to Solar System</a>
+        </nav>
+    </header>
+
+    <main class="single-page-main">
+        <!-- Calendário da Lua -->
+        <section class="universe-display full-width-display">
+            <div id="moon-calendar-container" style="display: flex !important; flex-direction: column; width: 100%; height: 100%; align-items: center; justify-content: center; padding: 10px;">
+                <h3 style="color: var(--pink-neon); font-family: 'Orbitron', sans-serif; margin-bottom: 10px;">Current Month Lunar & Zodiac Alignment</h3>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Gerado via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Painel de Informações do Dia Clicado -->
+        <aside class="info-panel">
+            <h2>Lunar Details</h2>
+            <div id="realtime-clock">Stellar Date: <span id="clock">Loading...</span></div>
+            
+            <div class="info-card" id="info-content">
+                <h3>Select a Day</h3>
+                <p>Click on any day in the lunar calendar grid to inspect the moon phase, zodiac sign, and energetic influence for that specific date.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Built with passion for Front-End & Astrophysics • Colors: Purple, Dark Pink, Black & White</p>
+    </footer>
+
+    <script src="java/moon-script.js"></script>
+</body>
+</html>

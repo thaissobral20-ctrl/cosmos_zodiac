@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos & Zodiac Interactive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <header>
+        <h1>🌌 COSMOS & ZODIAC</h1>
+        <p>Explore planets, moons, constellations, and real-time cosmic alignments.</p>
+        <nav>
+            <button class="nav-btn active" data-view="solar">Solar System</button>
+            <!-- Link direto para a nova página do Calendário Lunar -->
+            <a href="moon-calendar.html" class="nav-btn link-btn">Moon Phases & Zodiac</a>
+            <a href="constellations.html" class="nav-btn link-btn">Constellations</a>
+            <a href="zodiac.html" class="nav-btn link-btn">Signs & Transits</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Visual Area (Sistema Solar) -->
+        <section class="universe-display">
+    <div id="visual-container">
+        <div class="center-sun" data-name="Sun" data-sign="Leo">☀️</div>
+        
+        <!-- Órbitas estáticas -->
+        <div class="orbit orbit-mercury"></div>
+        <div class="orbit orbit-venus"></div>
+        <div class="orbit orbit-earth"></div>
+        <div class="orbit orbit-mars"></div>
+
+        <!-- Planetas em rotação independente -->
+        <div class="planet-wrapper orbit-mercury"><div class="planet mercury" data-name="Mercury" data-sign="Gemini/Virgo"></div></div>
+        <div class="planet-wrapper orbit-venus"><div class="planet venus" data-name="Venus" data-sign="Taurus/Libra"></div></div>
+        <div class="planet-wrapper orbit-earth"><div class="planet earth" data-name="Earth & Moon" data-sign="Cancer"></div></div>
+        <div class="planet-wrapper orbit-mars"><div class="planet mars" data-name="Mars" data-sign="Aries/Scorpio"></div></div>
+    </div>
+</section>
+
+      <!-- Real-Time Info Panel -->
+<aside class="info-panel">
+    <h2>Cosmic Panel</h2>
+    <div id="realtime-clock">Stellar Date: <span id="clock">Loading...</span></div>
+    
+    <div class="info-card" id="info-content">
+        <h3>Welcome to the Observatory</h3>
+        <p>Click on any celestial body in orbit or select a tab above to discover its connections with constellations and zodiac signs in real time.</p>
+    </div>
+
+    <div class="controls">
+        <button id="toggle-motion" class="action-btn">Pause / Resume Motion</button>
+    </div>
+</aside>
+    </main>
+
+    <footer>
+        <p>Built with passion for Front-End & Astrophysics • Colors: Purple, Dark Pink, Black & White</p>
+    </footer>
+
+    <script src="java/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Constellations</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+
+    <header>
+        <h1>✨ CELESTIAL CONSTELLATIONS</h1>
+        <p>Explore the mythological star patterns that shape our night sky and zodiac.</p>
+        <nav>
+            <a href="index.html" class="nav-btn link-btn">← Back to Solar System</a>
+        </nav>
+    </header>
+
+    <main class="single-page-main">
+        <!-- Lista de Constelações (Galeria de Seleção) -->
+        <section class="universe-display" style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 20px;">
+            <h3 style="color: var(--pink-neon); font-family: 'Orbitron', sans-serif; margin-bottom: 15px;">Select a Constellation</h3>
+            <div class="constellation-grid" id="constellation-grid">
+                <!-- Preenchido via JS -->
+            </div>
+        </section>
+
+        <!-- Painel de Exibição do Desenho e Descrição -->
+        <aside class="info-panel">
+            <h2>Stellar Observatory</h2>
+            <div id="realtime-clock">Stellar Date: <span id="clock">Loading...</span></div>
+            
+            <div class="info-card" id="constellation-info">
+                <h3>Choose a Star Pattern</h3>
+                <p>Click on any constellation card on the left to reveal its visual celestial map, mythology, and deep space description.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Built with passion for Front-End & Astrophysics • Colors: Purple, Dark Pink, Black & White</p>
+    </footer>
+
+    <script src="java/constellation-script.js"></script>
+</body>
+</html>
